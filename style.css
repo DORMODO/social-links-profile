@@ -65,9 +65,8 @@ main {
 
   & .profile__pic {
     margin-bottom: 2rem;
-    width: 9rem;
+    width: 10rem;
     border-radius: 50%;
-    filter: blur(7px);
   }
 
   & .profile__author {
