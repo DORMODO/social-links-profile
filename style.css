@@ -1,0 +1,115 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --darkgrey: hsl(0, 0%, 12%);
+  --offblack: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  color: var(--clr-white);
+}
+
+/* End CSS Reset */
+
+body {
+  background-color: var(--offblack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--darkgrey);
+  padding: 3.5rem;
+  border-radius: 1rem;
+  color: var(--white);
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .profile__pic {
+    margin-bottom: 2rem;
+    width: 9rem;
+    border-radius: 50%;
+    filter: blur(7px);
+  }
+
+  & .profile__author {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  & .profile__location {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--green);
+  }
+
+  & .profile__job {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  & .social-link {
+    background-color: var(--grey);
+    width: 100%;
+    border-radius: 0.8rem;
+    text-align: center;
+    padding: 1.5rem 10rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--green);
+      color: var(--grey);
+    }
+  }
+}
